@@ -1,0 +1,32 @@
+.bg-primary{
+    background: #2C0735 !important; 
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+}
+.bg-negro{
+    background-color: black;
+}
+#donkey{
+    margin-top: 30px;
+    width: auto;
+    height: 320px;
+    background-image: url("/assets/donkey.png");
+    background-size: auto;
+}
+#donkey div{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background: #613DC1;
+
+}
+#donkey div h1{
+    padding-top: 25%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    color: white;
+}
