@@ -24,7 +24,7 @@ body{
 }
 .donkey{
     margin-top: 30px;
-    width: auto;
+    /* width: 100%; */
     height: 320px;
     background-image: url("/assets/donkey.png");
     background-size: contain;
@@ -73,6 +73,7 @@ body{
         display: none;
     }
     .donkey{
+        width: 90%;
         background-size: auto;
         justify-content: end;
         align-items: flex-start;
