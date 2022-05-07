@@ -1,32 +1,89 @@
-.bg-primary{
-    background: #2C0735 !important; 
+:root{
+    --color-primary: #2C0735;
+    --color-secondary: #613DC1;
+    --color-tertiary: #79AEC3;
+    --color-white: white;
+    --color-black: black;
+    --font-var: 'Press Start 2P', cursive;
 }
+body{
+    background-color: var(--color-black);
+}
+.bg-primary{
+    background: var(--color-primary)  !important; 
+}
+
 #logo{
     width: 50px;
     height: 50px;
     border-radius: 150px;
 }
-.bg-negro{
-    background-color: black;
+
+.navegacion button{
+    display: none;
 }
-#donkey{
+.donkey{
     margin-top: 30px;
     width: auto;
     height: 320px;
     background-image: url("/assets/donkey.png");
-    background-size: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
-#donkey div{
-    height: 300px;
-    width: 300px;
+.donkey div{
+    height: 23vw;
+    width: 23vw;
     border-radius: 150px;
-    background: #613DC1;
-
+    background: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
 }
-#donkey div h1{
-    padding-top: 25%;
+.donkey div h1{
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 36px;
-    color: white;
+    font-family: var(--font-var);
+    font-size: 2.7vw;
+    color: var(--color-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width: 770px ){
+    .navegacion button{
+        display: block;
+    }
+    .navegacion button svg{
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .navegacion .nav{
+        display: none;
+    }
+    .donkey{
+        background-size: auto;
+        justify-content: end;
+        align-items: flex-start;
+    }
+    .donkey div{
+        height: 200px;
+        width: 200px;
+    }
+    .donkey div h1{
+        background-color: var(--color-secondary) 1;
+        font-size: 24px;
+    }
+    
 }

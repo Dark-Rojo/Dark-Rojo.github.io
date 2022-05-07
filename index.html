@@ -15,44 +15,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body class="bg-negro">
+<body onload="cargarPagina()">
 
-    <div class="bg-primary collapse" id="navbarAcercaDe">
-        <div class="container p-4">
-            <h4 class="text-white h4">Acerca de mi</h4>
-            <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus laboriosam quia amet voluptates exercitationem quos dolores alias excepturi. Repellendus voluptatibus pariatur et, magnam ipsam accusantium atque reprehenderit dolore quam? Unde.</span>
-        </div>
-    </div>
+    <section class="bg-primary collapse" id="navbarAcercaDe"></section>
+    <section class="bg-primary collapse" id="navbarAcercaDeRedes"></section>
     
     <nav class="navbar navbar-light bg-primary">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img id="logo" src="/assets/logo_jungle_bit.jpg" alt="Logo Jungle bit">
             </a>
-            <div class="">
-                <ul class="nav">
-                    <!-- <li class="nav-item"><a href="#" class="nav-link active text-white"  aria-current="page">Home</a></li> -->
-                    <li class="nav-item"><a class="nav-link text-white" href="http://www.youtube.com" target="_blank">Youtube</a></li>
+            <div class="navegacion">
+                <ul class="nav" id="navRedes">
+                    <!-- <li class="nav-item"><a class="nav-link text-white" href="http://www.youtube.com" target="_blank">Youtube</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="https://www.facebook.com/JungleBit666/" target="_blank">Facebook</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="https://www.twitch.tv/jungle_bit" target="_blank">Twitch</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                    <li class="nav-item text-white">
-                        <button class="navbar-toggler text-white btn btn-link btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAcercaDe" aria-controls="navbarAcercaDe" aria-expanded="false" aria-label="Toggle navigation">
-                            Acerca de
-                        </button>
-                    </li>
+                    <li class="nav-item text-white"><a href="#navbarAcercaDe" class="nav-link text-white" role="button" data-bs-toggle="collapse">Acerca de</a></li> -->
                 </ul>
+                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAcercaDeRedes" aria-controls="navbarAcercaDe" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
             </div>    
         </div>
     </nav>
-    <section class="container position-relative" id="donkey">
-        <div class="position-absolute top-50 end-0 translate-middle-y">
-            <h1>Welcome to the Jungle Bit!</h1>
+    <section class="container donkey">
+        <div class="">
+            <h1>Welcome <br> to the <br> Jungle Bit!</h1>
         </div>
     </section>
+    <!-- <section class="container">
+        <div class="row">
+            <div class="col-8 col-sm-8">
+                <img src="/assets/donkey.png" alt="Donkey">
+            </div>
+            <div class="col-4 col-sm-4">
+                <div class="" id="prueba">
+                    <h1 id="prueba">Welcome to the Jungle Bit!</h1>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
 
     <!-- Bootstrap -->
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
